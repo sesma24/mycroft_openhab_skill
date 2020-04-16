@@ -3,9 +3,15 @@ Code to control different IoT devices with a openHAB server using the Mycroft vo
 
 ## Requirements
 
-...
+[Python3??](https://www.python.org/downloads/)
 
 ## Start Project
+
+With backticks you can provide scripted commands easily readable and copyable.
+
+```bash
+python3 ...
+```
 
 ## Dialog examples
 

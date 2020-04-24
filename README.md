@@ -8,13 +8,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-In relation to the voice assistant part, different options are allowed for its implementation. In the official Mycroft documentation (https://mycroft.ai/get-started/) you can see five different ways to integrate this part of the system. The tests carried out in this case were based on the installation of Picroft's system on a Raspberry Pi 3+ as we only needed to integrate the voice assistant into the Raspberry as the server part would be separated into another device specially dedicated for this purpose.
+To be able to use the next skill the following prerequisites are needed.
 
-The openHAB server part can be installed on different devices, from an own dedicated server to a computer in the voice assistant network environment, in the same way it can be based on different Java platforms (Zulu, Oracle Java, OpenJDK). In this case it has been tested with both possibilities. In both cases it should be noted that to be able to use either of the two forms the corresponding device must be able to be switched on all the time and must be able to connect to the WiFi network.
+* Raspberry Pi 3 or 3B+
+* An SD card
+* The following image (https://github.com/MycroftAI/enclosure-picroft/)
+* openHAB server (https://www.openhab.org/docs/installation/) -> Java platforms
 
-The system can be installed in most of the available operating systems but you have to take into account that in each of them you have to follow a different installation process as indicated in the official documentation (https://www.openhab.org/docs/installation/)
+There are other alternatives for installing the Mycroft system as indicated in the official documentation (https://mycroft.ai/get-started/)
 
-As an additional comment, there is a predefined Skill for the use of Mycroft's Voice Assistant with the openHAB server (https://www.openhab.org/docs/ecosystem/mycroft/), however it has not been used in this case because it limits the system's possibilities. A clear example is that it does not allow you to change the color of the lights and limits the variability of possible commands for the user to perform a certain command.
+It should be noted that to be able to use the openHAB server the corresponding device must be able to be switched on all the time and must be able to connect to the WiFi network. In this case it has been verified that it works both with a dedicated server and with the openHAB server installed on a laptop.
 
 
 ### Installing
@@ -96,54 +99,4 @@ There are avaliable different options to execute the same order (more variabilit
 
 Similar commands also avaliable in German.
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+As an additional comment, there is a predefined Skill for the use of Mycroft's Voice Assistant with the openHAB server (https://www.openhab.org/docs/ecosystem/mycroft/), however it has not been used in this case because it limits the system's possibilities. A clear example is that it does not allow you to change the color of the lights and limits the variability of possible commands for the user to perform a certain command.

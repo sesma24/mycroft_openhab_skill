@@ -24,9 +24,7 @@ It should be noted that to be able to use the openHAB server the corresponding d
 
 A step by step series of examples that tell you how to get a development env running
 
-After the installation and the corresponding start of both the server and the voice assistant following the instructions in the official documentation of each one of them, both must be configured in the same WiFi network.
-
-The next step in this case is to obtain the IP address of the server, which can be easily obtained by writing the ifconfig (Linux) or ipconfig (Windows) command in a terminal of the device where the server is located. Other common alternatives can be considered depending on the O.S. of the device. After obtaining this address, the IP address should be changed in the __init__.py file in line of code 45 to the one obtained in this case, this will allow the commands collected by the Mycroft system to be sent directly to the openHAB server for execution.
+The first step in this case is to obtain the IP address of the server, which can be easily obtained by writing the ifconfig (Linux) or ipconfig (Windows) command in a terminal of the device where the server is located. Other common alternatives can be considered depending on the O.S. of the device. After obtaining this address, the IP address should be changed in the __init__.py file in line of code 45 to the one obtained in this case, this will allow the commands collected by the Mycroft system to be sent directly to the openHAB server for execution.
 
 
 This is where, depending on the previous configuration of the openHAB server according to the devices you have, you will have to set up the POST requests according to the names you have configured the different IoT elements of your network with. In order to make this task easier, it is recommended to look for the following URL in a browser: http://server_ip:8080/rest/items/ and be able to see the exact name of each one of the devices configured in the server so that you can later replace them in the Python code.
